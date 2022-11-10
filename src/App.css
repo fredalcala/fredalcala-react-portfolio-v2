@@ -101,7 +101,7 @@ main {
   }
 }
 
-@media(max-width: 500px){
+@media(max-width: 750px){
   .wrapper{
     width: auto !important;
   }
@@ -110,11 +110,10 @@ main {
 
 .wrapper{
   text-align: center;
-    width: 500px;
+    width: 750px;
     margin: auto;
     display: flex;
   }
-
   
 
 /* .neonText {
