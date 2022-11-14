@@ -1,5 +1,8 @@
 import "./App.css";
 import photo from "./images/suit-pic.JPG";
+import { MdEmail } from "react-icons/md";
+import { BsLinkedin } from "react-icons/bs";
+import { BsGithub } from "react-icons/bs";
 
 function App() {
   return (
@@ -15,17 +18,17 @@ function App() {
         </header>
       </div>
       <main className="flex-container bg-dark bg-opacity-25 justify-content-center">
-        <div className="imageContainer">
+        <div className="imageContainer mt-3">
           <img
             src={photo}
             width="350"
             height="400"
             alt="Fred in a suit with a desert background."
-            className="rounded-5"
+            className="rounded-5 border-dark border border-2"
           />
         </div>
-        <div className="wrapper row py-4">
-          <h3>Hello There! My name is Fred Alcala.</h3>
+        <div className="wrapper row my-5 px-3 bg-white rounded-5">
+          <h3 className="pt-5">Hello There! My name is Fred Alcala.</h3>
           <div className="mt-5 px-5 d-flex flex-column">
             <p>
               I currently live in Phoenix, Arizona. While still relatively new
@@ -42,42 +45,42 @@ function App() {
           <hr />
           <br />
           <div>
-            <h3>Here are some of my completed projects so far:</h3>
+            <h3>Here are some of the projects I have worked on so far:</h3>
             <br />
-            <div class="row py-4">
-              <div class="col-sm-6">
-                <div class="card">
-                  <div class="card-body">
+            <div className="row py-4">
+              <div className="col-sm-6 pb-4">
+                <div className="card border-info border border-2">
+                  <div className="card-body">
                     <div className="bg-info pt-3">
-                      <h5 class="card-title pb-3">
+                      <h5 className="card-title pb-3">
                         Restaurant Reservation App
                       </h5>
                     </div>
-                    <p class="text-start">
+                    <p className="text-start">
                       • Full stack reservation and table management system.
                     </p>
-                    <p class="text-start">
+                    <p className="text-start">
                       • Implemented react router and express to build a RESTful
                       API in order to make HTTP requests for all of the
                       reservation data stored on the connected PostgreSQL
                       database.
                     </p>
-                    <p class="text-start">
+                    <p className="text-start">
                       • Created CRUD functions and knex queries to handle data
                       going to and coming from the database.
                     </p>
-                    <p class="text-start">
+                    <p className="text-start">
                       • Used Git to track changes and versions while keeping
                       sensitive information from being pushed to repositories.
                     </p>
-                    <p class="text-start">
+                    <p className="text-start">
                       Technology: React, Node.js, Express, Knex and PostgreSQL.
                     </p>
                     <div className="row pt-4">
                       <div className="col">
                         <a
                           href="https://restaurant-reserv-frontend.onrender.com/dashboard"
-                          class="btn btn-primary"
+                          className="btn btn-primary"
                         >
                           Live Site
                         </a>
@@ -85,7 +88,7 @@ function App() {
                       <div className="col">
                         <a
                           href="https://github.com/fredalcala/starter-restaurant-reservation"
-                          class="btn btn-secondary"
+                          className="btn btn-secondary"
                         >
                           GitHub Repo
                         </a>
@@ -94,26 +97,28 @@ function App() {
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6">
-                <div class="card">
-                  <div class="card-body">
+              <div className="col-sm-6">
+                <div className="card border-info border border-2">
+                  <div className="card-body">
                     <div className="bg-info pt-3">
-                      <h5 class="card-title pb-3">Project Flash-o'-matic</h5>
+                      <h5 className="card-title pb-3">
+                        Project Flash-o'-matic
+                      </h5>
                     </div>
-                    <p class="text-start pb-3">
+                    <p className="text-start pb-2">
                       • Created an application that allows users to create,
                       edit, and delete decks and cards within them.
                     </p>
-                    <p class="text-start pb-3">
+                    <p className="text-start pb-2">
                       • Created a REST API and middleware functions to allow
                       user(s) to create, read, update and delete their perfect
                       deck of study cards.
                     </p>
-                    <p class="text-start pb-3">
+                    <p className="text-start pb-2">
                       • Defined routes and URLs, and used state over multiple
                       components.
                     </p>
-                    <p class="text-start pb-4">
+                    <p className="text-start pb-4">
                       Technology: JavaScript, React, Express, Knex, HTML and
                       CSS. Progress/Versions tracked with Git.
                     </p>
@@ -124,7 +129,7 @@ function App() {
                       <div className="col">
                         <a
                           href="https://github.com/fredalcala/Project-Flash-o-matic"
-                          class="btn btn-secondary"
+                          className="btn btn-secondary"
                         >
                           GitHub Repo
                         </a>
@@ -134,26 +139,26 @@ function App() {
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-sm-6">
-                <div class="card">
-                  <div class="card-body">
+            <div className="row">
+              <div className="col-sm-6 pb-4">
+                <div className="card border-info border border-2">
+                  <div className="card-body">
                     <div className="bg-info pt-3">
-                      <h5 class="card-title pb-3">WeLoveMovies</h5>
+                      <h5 className="card-title pb-3">WeLoveMovies</h5>
                     </div>
-                    <p class="text-start">
+                    <p className="text-start pb-2">
                       • Assembled the back end of a movie website allowing any
                       user to search for their favorite movies.
                     </p>
-                    <p class="text-start">
+                    <p className="text-start pb-2">
                       • Used CRUD methods for reviews, and view theaters and
                       movies that are showing.
                     </p>
-                    <p class="text-start">
+                    <p className="text-start pb-2">
                       • Applied router and controller functions to retrieve a
                       user's specific requests.
                     </p>
-                    <p class="text-start">
+                    <p className="text-start">
                       Technology: Node.js, Express, and Knex. Version control
                       with Git.
                     </p>
@@ -164,7 +169,7 @@ function App() {
                       <div className="col">
                         <a
                           href="https://github.com/fredalcala/WeLoveMovies"
-                          class="btn btn-secondary"
+                          className="btn btn-secondary"
                         >
                           GitHub Repo
                         </a>
@@ -173,20 +178,20 @@ function App() {
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6">
-                <div class="card">
-                  <div class="card-body">
+              <div className="col-sm-6 pb-4">
+                <div className="card border-info border border-2">
+                  <div className="card-body">
                     <div className="bg-info pt-3">
-                      <h5 class="card-title pb-3">Decoder Ring</h5>
+                      <h5 className="card-title pb-3">Decoder Ring</h5>
                     </div>
-                    <p class="text-start pb-2">
+                    <p className="text-start pb-2">
                       • Built to be an encryption/decryption application to
                       communicate and read top-secret messages.
                     </p>
-                    <p class="text-start pb-3">
+                    <p className="text-start pb-3">
                       • Created utilizing the test-driven development method.
                     </p>
-                    <p class="text-start pb-5">
+                    <p className="text-start pb-5">
                       Technology: JavaScript ES6, HTML5, Node.js, Bootstrap,
                       Mocha, Chai.
                     </p>
@@ -197,7 +202,7 @@ function App() {
                       <div className="col">
                         <a
                           href="https://github.com/fredalcala/Capstone-1-Decoder"
-                          class="btn btn-secondary"
+                          className="btn btn-secondary"
                         >
                           GitHub Repo
                         </a>
@@ -207,6 +212,39 @@ function App() {
                 </div>
               </div>
             </div>
+          </div>
+          <br />
+          <div>
+            <hr />
+            <br />
+            <h3>Contact Info</h3>
+            <br />
+            <br />
+            <p>
+              If you ever need to get a hold of me, feel free to reach out to me
+              using:
+            </p>
+            <br />
+            <br />
+            <ul className="list-inline">
+              <li className="list-inline-item">
+                <a className="media" href="mailto:aalcala9@miners.utep.edu">
+                  Email <MdEmail />
+                </a>
+              </li>
+              <li className="list-inline-item">
+                <a className ="media" href="https://www.linkedin.com/in/alfredo-alcala9/.html">
+                  LinkedIn
+                  <BsLinkedin />{" "}
+                </a>
+              </li>
+              <li className="list-inline-item">
+                <a className="media" href="https://github.com/fredalcala.html">
+                  GitHub
+                  <BsGithub />{" "}
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </main>
